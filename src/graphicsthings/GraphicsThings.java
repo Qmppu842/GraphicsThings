@@ -42,7 +42,7 @@ public class GraphicsThings extends Application {
 //        gc.setFill(paint);
 //        gc.fillArc(0 - 50, 0 - 50, 100, 100, 0, 90, ArcType.ROUND);
 
-        Arc arc = new Arc(WIDTH / 2, HEIGHT / 2, 200, 200, 0, -90);
+        Arc arc = new Arc(WIDTH / 2, HEIGHT / 2, asd, asd, 0, -90);
         arc.getOnMouseEntered();
         arc.setType(ArcType.CHORD);
         arc.setFill(paint);
@@ -52,6 +52,9 @@ public class GraphicsThings extends Application {
             @Override
             public void handle(long now) {
                 arc.setTranslateX(asd);
+                arc.setRadiusX(asd);
+                arc.setRadiusY(asd);
+                arc.setRotate(asd);
                 asd++;
             }
         };
